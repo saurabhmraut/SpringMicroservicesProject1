@@ -1,0 +1,45 @@
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: Emp-Service
+#        uri:
+#          lb://Emp-Service
+#       predicates:
+#        - path : /emp/**
+
+
+server:
+  port: 8999
+
+eureka:
+  instance:
+    hostname: localhost
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: dept-service
+        uri:
+          lb://dept-servive
+        predicates:
+        - path = /dept/**
+      - id: emp-service
+        uri: lb://emp-service
+        predicates:
+        - Path=/emp/** 
+  application:
+    name: api-GatWay    
+         
+        
+         
+    
+
+
+
+
+          
+  
