@@ -6,7 +6,7 @@
 - EmployeeService
 - EurekaService
 - HRService
-- JWT_authenticationAndAutherizeService
+- JWT_authenticationAndAutherizationService
 
 ## Technologies
 - Java 17
